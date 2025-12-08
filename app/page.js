@@ -96,7 +96,7 @@ export default function FormConverter() {
             Select conversion type:
           </label>
           <select
-            className="select select-bordered min-w-[14rem] w-auto"
+            className="min-w-[14rem] w-auto rounded-xl border border-neutral-300 bg-white px-3 py-2 text-neutral-900 outline-none focus:ring-2 focus:ring-neutral-900/20"
             value={mode}
             onChange={(e) => setMode(e.target.value)}
           >
