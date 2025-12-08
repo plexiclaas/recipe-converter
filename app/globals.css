@@ -18,3 +18,21 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Remove backdrop overlay on mobile dropdowns */
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* Prevent backdrop overlay on iOS */
+select:focus {
+  outline: none;
+}
+
+/* Ensure select options are visible */
+select option {
+  background-color: white;
+  color: #171717;
+}
