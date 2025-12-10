@@ -1,0 +1,22 @@
+export default function OutputPiecesForm({
+  outputPieces,
+  onOutputPiecesChange,
+}) {
+  return (
+    <div className="md:col-span-2 mt-2">
+      <h2 className="text-base font-semibold text-neutral-900 mb-2">
+        Output Pieces
+      </h2>
+
+      <div>
+        <label className="text-sm font-medium">Number of pieces (needed)</label>
+        <input
+          type="number"
+          className="mt-1 w-full rounded-xl border border-neutral-300 px-3 py-2 text-neutral-900 outline-none focus:ring-2 focus:ring-neutral-900/20"
+          value={outputPieces}
+          onChange={(e) => onOutputPiecesChange(e.target.value)}
+        />
+      </div>
+    </div>
+  );
+}
